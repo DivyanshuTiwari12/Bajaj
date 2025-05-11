@@ -42,7 +42,7 @@ def solve_sql_problem(question_url):
     JOIN EMPLOYEE e ON p.EMP_ID = e.EMP_ID
     JOIN DEPARTMENT d ON e.DEPARTMENT = d.DEPARTMENT_ID
     WHERE strftime('%d', p.PAYMENT_TIME) != '01'
-    ORDER BY p.AMOUNT DESC
+    ORDER BY p.AMOUNT DES
     LIMIT 1
 """
 
